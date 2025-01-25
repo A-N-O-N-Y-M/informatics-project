@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Приложение Kivy Python — Функции</title>
+    <link rel="stylesheet" href="../Styles/style.css">
+    <link rel="icon" href="../Resources/Images/favicon.ico" type="image/x-icon">
+</head>
+<body class="aselect">
+    <header>
+        <div class="logo">
+            <a href="/">
+                <img src="../Resources/Images/Logo.png" width="60" height="60px"/>
+            </a>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="functions.html"><u>Функции</u></a></li>
+                <li><a href="dictionary.html">Словарь</a></li>
+                <li><a href="building.html">Сборка</a></li>
+                <li><a href="questionnaire.html">Анкета</a></li>
+            </ul>
+        </div>
+        <div class="tel"><a href="mailto:reichstag19411945@gmail.com">reichstag19411945@gmail.com</a></div>
+    </header>
+
+    <font color="white">
+        <h1 align="center">Структура работы приложения и Базовые функции для работы с Kivy</h1>
+    </font>
+    <hr>
+    <div style="width:100%; margin-top: 30px; margin-left: 0px">
+        <div style="width:40%; float:left;">
+            <p align="left">
+                <img src="../Resources/Images/Kivy_App_Life_Cycle.png" title="KivyLife" style="background-color: rgba(0, 0, 0, 0.1);">
+            </p>
+        </div>
+        <div style="width:50%; float:right; margin-top: 18px">
+            <table border="2px" width="100%" align="center" style="color: #fff; border-color: #fff; border-collapse: collapse;" >
+                <tr>
+                    <th align="center">№ п/п</th>
+                    <th align="center">Основные функции и модули для работы приложения</th>
+                    <th align="center">Роль в разработке приложения</th>
+                </tr>
+                <tr>
+                    <td align="center">1</td>
+                    <td align="center">Модуль kivy.app.App</td>
+                    <td align="center">Необходим для запуска инициализации приложения</td>
+                </tr>
+                <tr>
+                    <td align="center">2</td>
+                    <td align="center">Модуль kivy.uix.NLayout</td>
+                    <td align="center">Под N подразумевается тип лайаута. Необходим для компоновки виджетов. Можно выделить 4 основных типа лайаута: GridLayout, RelativeLayout, FloatLayout и BoxLayout</td>
+                </tr>
+                <tr>
+                    <td align="center">3</td>
+                    <td align="center">Модуль kivy.uix.Widget</td>
+                    <td align="center">Используется в классах, отдельных от основного, чтобы присвоить классу значение виджета</td>
+                </tr>
+                <tr>
+                    <td align="center">4</td>
+                    <td align="center">Модуль kivy.uix.Label</td>
+                    <td align="center">Используется в качестве отображения текста. Основные параметры: text [str], pos_hint [dict], font_size [int], bold [bool], font_name [str]</td>
+                </tr>
+                <tr>
+                    <td align="center">5</td>
+                    <td align="center">Модуль kivy.uix.Button</td>
+                    <td align="center">Используется в качестве отображения кнопки. Основные параметры: text [str], pos_hint [dict], size_hint [tuple], color [str], bold [bool], background_normal, background_down, size [tuple], pos_x [int/float], pos_y [int/float], pos [tuple]</td>
+                </tr>
+                <tr>
+                    <td align="center">6</td>
+                    <td align="center">Модуль kivy.Config</td>
+                    <td align="center">Необходим для конфигурации приложения: присвоение размера экрана, полноэкранного режима и т.п.</td>
+                </tr>
+                <tr>
+                    <td align="center">7</td>
+                    <td align="center">Модуль kivy.animation.Animation</td>
+                    <td align="center">Нужен для присвоения анимаций виджету</td>
+                </tr>
+                <tr>
+                    <td align="center">8</td>
+                    <td align="center">Функция bind()</td>
+                    <td align="center">Необходима для присвоения кнопки возможности выполнить определенную часть кода.<br>Базовые параметры данной функции: on_press [self.def], on_release [self.def]</td>
+                </tr>
+                <tr>
+                    <td align="center">9</td>
+                    <td align="center">Функция add_widget (self.X.add_widget)</td>
+                    <td align="center">Необходима для добавления виджета на экран приложения. X - ваш лайаут, если вы хотите добавить виджет на сам экран, вне лайаута - используйте self.add_widget(self.ваш_виджет)</td>
+                </tr>
+                <tr>
+                    <td align="center">10</td>
+                    <td align="center">Экран (ПР: class TestScreen(Screen, RelativeLayout)</td>
+                    <td align="center">Одна из "Страниц" приложения, которой можно присвоить параметр Экрана, чтобы он им являлся, тип компоновки виджетов на нем и др.</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

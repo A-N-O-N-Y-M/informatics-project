@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Приложение Kivy Python — Анкета</title>
+    <link rel="stylesheet" href="../Styles/style.css">
+    <link rel="icon" href="../Resources/Images/favicon.ico" type="image/x-icon">
+</head>
+<body class="aselect">
+    <header>
+        <div class="logo">
+            <a href="/">
+                <img src="../Resources/Images/Logo.png" width="60" height="60px"/>
+            </a>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="functions.html">Функции</a></li>
+                <li><a href="dictionary.html">Словарь</a></li>
+                <li><a href="building.html">Сборка</a></li>
+                <li><a href="questionnaire.html"><u>Анкета</u></a></li>
+            </ul>
+        </div>
+        <div class="tel"><a href="mailto:reichstag19411945@gmail.com">reichstag19411945@gmail.com</a></div>
+    </header>
+
+    <font color="white">
+        <h1 align="center">Создание анкеты</h1>
+    </font>
+    <hr>
+    <table border="0px" width="100%">
+        <tr>
+            <td width="33%" class="td-c"></td>
+            <td width="33%" class="td-c">
+                <div class="form">
+                    <form>
+                        <label for="name">Ваше имя:</label>
+                            <input type="text" id="name" name="name">
+                         <label for="email">Ваш e-mail:</label>
+                           <input type="email" id="email" name="email">
+
+                         <label for="group">К какой группе пользователей вы себя относите:</label>
+                         <select id="group" name="group">
+                             <option value="choose" selected>--- Выберите ---</option>
+                             <option value="learner">Учащийся</option>
+                             <option value="student">Студент</option>
+                             <option value="teacher">Преподаватель</option>
+                             <option value="potato">Картофель</option>
+                         </select>
+
+                        <label for="internet_use">Какие из сервисов Интернета вы используете наиболее часто:</label>
+                        <select id="internet_use" name="internet_use">
+                            <option value="choose" selected>--- Выберите ---</option>
+                            <option value="www">WWW</option>
+                            <option value="e-mail">E-mail</option>
+                            <option value="ftp">FTP</option>
+                            <option value="hosting">Хостинг</option>
+                            <option value="nothing">Ничего из этого</option>
+                         </select>
+
+                        <label for="internet_use">Какой браузер вы используете чаще всего:</label>
+                        <select id="browsers_use" nаmе="browsers">
+                            <option value="choose" selected>--- Выберите ---
+                            <option value="ddg">DuckDuckGo
+                            <option value="tor">Tor
+                            <option value="mse">MS Edge
+                            <option value="nn">Netscape Navigator
+                            <option value="opr">Opera
+                            <option value="oprgx">Opera GX
+                            <option value="ffx">Firefox
+                            <option value="sfr">Safari
+                            <option value="chrm">Chrome
+                            <option value="chrmm">Chromium
+                            <option value="neo">Neo Planet
+                            <option value="yab">Yandex Browser
+                        </select>
+
+                        <label for="more_info">Какую еще информацию вы хотели бы видеть на нашем сайте?</label>
+                        <textarea id="more_info" name="more_info" rows="4"></textarea>
+
+                        <button type="submit">Отправить</button>
+                    </form>
+                </div>
+            </td>
+            <td width="33%" class="td-c"></td>
+        </tr>
+    </table>
+</body>
+</html>

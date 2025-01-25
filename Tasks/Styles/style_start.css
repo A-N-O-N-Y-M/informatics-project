@@ -1,0 +1,80 @@
+body {
+    background: url(../Resources/Images/background.jpg);
+    background-attachment: fixed;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: rgba(33, 33, 33, 0.3);
+}
+
+.menu {
+  flex-grow: 1;
+}
+
+.menu ul {
+  display: flex;
+  flex-flow: row nowrap;
+  margin: 2px 0 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 18px;
+  list-style: none;
+}
+
+.menu a,
+.menu .active {
+  display: block;
+  padding: 8px 10px;
+  text-transform: uppercase;
+  letter-spacing: .27em;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.menu .active {
+  color: #fff;
+  background-color: #ff3d00;
+  border-radius: 8px;
+}
+
+.logo {
+  margin-right: 30px;
+}
+
+.tel {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.tel a {
+  color: #fff;
+  text-decoration: none;
+}
+
+td {
+  color: #fff;
+  border-right: 1px dashed #fff;
+}
+
+.aselect{
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
